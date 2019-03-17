@@ -133,7 +133,6 @@ h3{
     padding: 2px;           
 }
 
-
 /*//////////////////////////////////////////////////////////////////
 Propriétés des éléments enfants > box
 /////////////////////////////////////////////////////////////// */
@@ -165,7 +164,6 @@ Propriétés des éléments enfants > box
 .box-6{
     flex-basis: 100%; /* Pour un box de 100% */
 }
-
 
 /*//////////////////////////////////////////////////////////////////
 Containers de blocs
@@ -200,8 +198,7 @@ Containers de blocs
     margin-top: 280px;
     padding: 50px;
     height: auto;   
-    
-}
+    }
 
 .container-experiences{
     display: flex;
@@ -275,8 +272,7 @@ blocs
     padding: 30px;    
     border-radius: 10px;
     margin: 30px;
-    box-shadow: 2px 2px 2px 2px rgba(79, 82, 81, 0.9);
-   
+    box-shadow: 2px 2px 2px 2px rgba(79, 82, 81, 0.9);   
 }
 
 .formations ul{
