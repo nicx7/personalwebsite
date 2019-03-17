@@ -1,0 +1,411 @@
+/* Styles Propriétés */
+/*///////////////////////////////////////////////
+                  Fonts
+ /////////////////////////////////////////////*/
+@font-face{
+    font-family: "ArchitectsDaughter";
+    src: url(polices/ArchitectsDaughter.ttf) format('truetype');
+}
+@font-face{
+    font-family: "Shortcut";
+    src: url(polices/SHORTCUT.ttf) format('truetype');
+}
+@font-face{
+    font-family: "TarponMotel";
+    src: url(polices/TarponMotel.otf) format('OpenType');
+}
+
+@font-face{
+    font-family: "GloriaHallelujah";
+    src: url(polices/GloriaHallelujah.ttf)
+}
+/*///////////////////////////////////////////////
+                  Propriétés page
+ /////////////////////////////////////////////*/
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+a:visited{
+    color:rgba(238, 95, 12, 0.5);
+}
+a{
+    color: rgb(34, 37, 37);
+    
+}
+a:hover{
+    color: rgba(9, 124, 231, 0.5);
+}
+.container{
+  width: 100%;
+  margin: 0 ;
+}
+
+.topheader{
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    background-image: url(images/fondtopheader.jpg);
+    background-repeat: no-repeat ;
+    background-position: center top;
+    background-size: cover;
+    height: 280px;
+    width: 100%;   
+    position: fixed;
+    top: 0;
+}
+
+
+.bigbox{
+    display: flex; /* Ajoute la propriété flex aux enfants */
+    flex-wrap:  wrap; /* Autorise le retour à la ligne */
+      
+}
+
+.menu{
+    font-family: "TarponMotel";
+    font-size: 1.5em;
+    background-color: rgb(0, 0, 0);     
+    position: absolute ;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;     
+}
+.menu a:visited{
+    color:rgb(131, 126, 126);
+    }
+    
+.menu a:hover{
+    color:rgb(0, 0, 0);
+    background-color: rgb(251, 254, 255);
+    opacity: 0.7;
+    border-radius: 5px;    
+}
+.menu a{
+    list-style: none;    
+    text-decoration: none;
+    padding: 0 25px;
+    color:rgb(255, 250, 250);        
+}
+
+
+.titre{
+    /* color: rgba(20, 163, 230, 0.7); */
+    color: rgb(251, 255, 255);
+    font-size: 4.3em;
+    font-family: 'GloriaHallelujah';
+    margin: auto;    
+}
+h1
+{
+    padding: 10px;
+    text-align: center;
+    
+}
+h2{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+    padding: 10px;
+    
+}
+h3{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+}
+
+.savoirs h2{
+    text-align: center;
+    color: white;
+}
+
+.bouton{
+    color: orange;
+    text-decoration: none;
+}
+
+.bouton:hover {
+    background-color:rgb(144, 57, 6);
+    color: white;
+    border-radius: 5px;
+    padding: 2px;           
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+Propriétés des éléments enfants > box
+/////////////////////////////////////////////////////////////// */
+
+
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6{ 
+    flex-basis: 33.33%;   /* la taille de base est fixée */
+    box-sizing: border-box;  /* les dimensions du padding ou des bordures viennent diminuer les dimensions du contenu. */
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-shrink: 1;  /* interdit le rétrécissement */  
+}
+
+.box-1{
+    flex-basis: 10%; /* Pour un box de 10% */
+}
+.box-2{
+    flex-basis: 25%; /* Pour un box de 25% */
+}
+.box-3{
+    flex-basis: 33.33%; /* Pour un box de 33.3% */
+}
+.box-4{
+    flex-basis: 50%; /* Pour un box de 50% */
+}
+.box-5{
+    flex-basis:  66.66%; /* Pour un box de 66.66% */
+}
+.box-6{
+    flex-basis: 100%; /* Pour un box de 100% */
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+Containers de blocs
+/////////////////////////////////////////////////////////////// */
+
+.container-a-propos{ 
+    display: flex;
+    flex-flow: row wrap; 
+    align-items: center;
+    justify-content: center;    
+    margin-top: 280px;
+    text-align: left;   
+    height: auto;   
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.container-projet
+{  
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;       
+    height: auto;
+    background-color: rgb(141, 141, 140);
+    
+}
+.container-competences{
+    display: flex;
+    flex-flow: row wrap; 
+    align-items: flex-start;
+    justify-content: center; 
+    text-align: left;
+    margin-top: 280px;
+    padding: 50px;
+    height: auto;   
+    
+}
+
+.container-experiences{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+    background-color: rgba(73, 139, 194, 0.705);
+}
+
+.container-formations{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    padding: 50px;
+    margin: auto;
+         
+}
+.container-atouts{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    padding: 50px;
+    margin: auto;
+    background-color: rgb(119, 118, 118);
+   
+}
+.container-outils{ 
+    display: flex;
+    flex-flow: row wrap; 
+    align-items: center;
+    justify-content: center;    
+    margin-top: 280px;
+    text-align: center;   
+    height: auto;   
+  }
+ 
+/*//////////////////////////////////////////////////////////////////
+blocs
+/////////////////////////////////////////////////////////////// */
+
+.savoirs{
+    text-align: left;
+    padding: 30px;    
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 2px rgba(4, 77, 28, 0.9);
+    background-color: rgb(46, 110, 9);
+    color: white;
+}
+
+.exp{
+    text-align: left;
+    padding: 30px;    
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 2px rgba(54, 132, 172, 0.9);
+    background-color: rgb(253, 249, 255);
+}
+.exp ul{
+    list-style: none;
+}
+
+.formations{
+    text-align: center;
+    padding: 30px;    
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 2px 2px 2px 2px rgba(79, 82, 81, 0.9);
+   
+}
+
+.formations ul{
+    list-style: none;
+}
+.atouts{
+    text-align: center;
+    padding: 30px;    
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 2px 2px 2px 2px rgba(86, 88, 88, 0.9);
+    background-color: rgb(240, 234, 234);    
+}
+.outils{
+    text-align: center;
+    padding: 30px;    
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 2px 2px 2px 2px rgba(86, 88, 88, 0.9);    
+}
+
+.atouts ul{
+    list-style: none;
+}
+.apropos{
+    text-align: left;
+    padding: 30px;
+    margin: 30px;
+}
+.projet{
+    text-align: left;
+    padding: 30px;
+    margin: 30px;
+}
+
+
+.floatl{
+    float: left;
+}
+.left{
+    text-align: left;
+   margin-left: 180px;
+}
+.floatr{
+    float: right;
+}
+.right{
+    text-align: right;
+    margin-right: 180px;
+}
+.figureoutils{
+    margin: 30px;
+}
+
+.outilsrealisations{
+    text-align: left;
+}
+
+/*//////////////////////////////////////////////////////////////////
+Images Logo
+/////////////////////////////////////////////////////////////// */
+.logo1{
+    margin: auto;
+    background-color: transparent;    
+}
+.imagecv{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;      
+}
+
+.competenceslogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.experienceslogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.atoutslogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formationslogo{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondary
+{
+    text-align: center;
+    
+}
+.navimage{
+    padding: 20px;
+    opacity: 1;
+}
+a:hover .navimage{
+    opacity: 0.8;    
+}
+.copyright
+{
+    font-size: 0.8em;
+    color: silver;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.permis{
+    margin-bottom: -10px;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+Responsive
+/////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 1200px){  
+      .box-1, .box-2, .box-3, .box-4, .box-5, .box-6{ 
+          flex-basis: 100%;
+          text-align: center;    
+}
+ .container-a-propos{
+     margin-top: 300px;
+ }
+}
+
