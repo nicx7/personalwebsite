@@ -23,6 +23,18 @@
     font-family: "Montserrat Regular";
     src: url(polices/Montserrat-regular.otf);
 }
+@font-face{
+    font-family: "Montserrat Black";
+    src: url(polices/Montserrat-black.otf);
+}
+@font-face{
+    font-family: "Montserrat Medium";
+    src: url(polices/Montserrat-medium.otf);
+}
+@font-face{
+    font-family: "Montserrat Alternates SemiBold";
+    src: url(polices/MontserratAlternates-SemiBold.otf);
+}
 /*///////////////////////////////////////////////
                   Propriétés page
  /////////////////////////////////////////////*/
@@ -109,18 +121,19 @@ h1
 {
     padding: 10px;
     text-align: center;
+    font-family: "Montserrat Alternates SemiBold";
     
 }
 h2{
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Montserrat Alternates SemiBold";
     font-size: 1.3em;
     padding: 10px;
     
 }
 h3{
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Montserrat Medium";
     font-size: 1em;
 }
 
@@ -401,7 +414,7 @@ a:hover .navimage{
 
 .recit{
     text-align: center;
-    
+    font-family: "Montserrat Alternates SemiBold";
 }
 /*//////////////////////////////////////////////////////////////////
 Responsive
