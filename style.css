@@ -17,14 +17,18 @@
 
 @font-face{
     font-family: "GloriaHallelujah";
-    src: url(polices/GloriaHallelujah.ttf)
+    src: url(polices/GloriaHallelujah.ttf);
+}
+@font-face{
+    font-family: "Montserrat Regular";
+    src: url(polices/Montserrat-regular.otf);
 }
 /*///////////////////////////////////////////////
                   Propriétés page
  /////////////////////////////////////////////*/
 body{
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Montserrat Regular";
     
 }
 a:visited{
@@ -52,8 +56,12 @@ a:hover{
     width: 100%;   
     position: fixed;
     top: 0;
+    z-index: 1000;
+    }
+.twitter{
+    display: block;
+    text-align: center;
 }
-
 
 .bigbox{
     display: flex; /* Ajoute la propriété flex aux enfants */
@@ -186,7 +194,7 @@ Containers de blocs
     justify-content: center;
     align-items: center;       
     height: auto;
-    background-color: rgb(141, 141, 140);
+    background-color: rgb(202, 202, 199);
     
 }
 .container-competences{
@@ -391,7 +399,10 @@ a:hover .navimage{
     margin-bottom: -10px;
 }
 
-
+.recit{
+    text-align: center;
+    
+}
 /*//////////////////////////////////////////////////////////////////
 Responsive
 /////////////////////////////////////////////////////////////// */
