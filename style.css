@@ -84,8 +84,9 @@ a:hover{
 .menu{
     font-family: "TarponMotel";
     font-size: 1.5em;
-    background-color: rgb(0, 0, 0);     
+    background-color: rgb(0, 0, 0); 
     position: absolute ;
+    opacity: 0.7;
     bottom: 0px;
     width: 100%;
     display: flex;
@@ -93,20 +94,19 @@ a:hover{
     justify-content: center;     
 }
 .menu a:visited{
-    color:rgb(131, 126, 126);
+    color:rgb(228, 135, 81);
     }
     
 .menu a:hover{
-    color:rgb(0, 0, 0);
-    background-color: rgb(251, 254, 255);
-    opacity: 0.7;
-    border-radius: 5px;    
+    color:rgba(38, 176, 218, 0.705);
+
 }
 .menu a{
     list-style: none;    
     text-decoration: none;
-    padding: 0 25px;
-    color:rgb(255, 250, 250);        
+    padding: 0 65px;
+    color:rgb(246, 246, 252); 
+          
 }
 
 
@@ -122,6 +122,7 @@ h1
     padding: 10px;
     text-align: center;
     font-family: "Montserrat Alternates SemiBold";
+    color: rgb(18, 132, 185);
     
 }
 h2{
@@ -129,6 +130,7 @@ h2{
     font-family: "Montserrat Alternates SemiBold";
     font-size: 1.3em;
     padding: 10px;
+    color: rgb(18, 132, 185);
     
 }
 h3{
@@ -427,5 +429,12 @@ Responsive
  .container-a-propos{
      margin-top: 300px;
  }
+}
+@media screen and (max-width:600px){
+    .container
+{
+    padding: 2px;
+    margin: 0;
+}
 }
 
